@@ -1,0 +1,56 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #007BFF; /* Cor de fundo do cabeçalho */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style: none; /* Remove bullets */
+    display: flex;
+    gap: 20px; /* Espaçamento entre itens */
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s; /* Transição suave para hover */
+  }
+  
+  nav ul li a:hover {
+    color: #ffd700; /* Cor ao passar o mouse */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column; /* Menu vertical em telas menores */
+      gap: 10px; /* Ajusta o espaçamento */
+    }
+  
+    nav ul li a {
+      font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+  }
+  
